@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,700;1,600&family=Montserrat:wght@500&family=Noto+Sans+TC:wght@400;500&display=swap');
+.wrapper {
+  height: 5000px;
+}
+// 標題 Chakra Petch bold 700 副標 600 italic 內文 Montserrat 500 (英文)
+// 中文 noto  500 fw letterspacing  400 lineheight size
+body {
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  .bg {
+  background-image: url('/images/bg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background:
+      linear-gradient(41deg, rgba(255, 255, 255, 0.42062762605042014) 0%,
+      rgba(123, 128, 129, 0.6671262254901961) 43%,
+      rgba(41, 80, 88, 0.7147452731092436) 95%);
+    }
+  }
+  .header {
+    .icon {
+      a {
+        padding: 25px 10px;
+      }
+    }
+    .nav {
+      .nav-toggle {
+        padding: 25px 20px;
+        span {
+          height: 2px;
+          width: 40px;
+          background: white;
+          &:nth-child(1) {
+            margin-bottom: 12px;
+          }
+          &:nth-child(2) {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+  .main {
+    padding-top: 20vh;
+    .main-model {
+        background-image: url('/images/author.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 300px;
+        max-width: 1140px;
+        top: 80px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    .main-content {
+      padding: 0px 10px;
+      h1 {
+        font-size: 72px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+}
